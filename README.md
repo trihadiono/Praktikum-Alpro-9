@@ -5,13 +5,13 @@ List
 #UNIVERSITAS KRISTEN DUTA WACANA
 REFERENSI : MODUL
 
-def pemetaanList(na, no, um):
-    cetak='===============Daftar Siswa===============\n'    
+def daftarnilai(na,nip,nik):
+    cetak='===============DAFTAR NILAI PENJAS ORKES===============\n'
     for data in range(len(na)):
-        cetak+='Nama: '+na[data]+' | NIS: '+no[data]+' | Umur: '+str(um[data])+'\n'
+        cetak+='Nama: '+na[data]+' | Nilai Pengetahuan: '+str(nip[data])+' | Nilai Praktek: '+str(nik[data])+'\n'
     print(cetak)
-
-nama=['Angel','Riani','Vista','Fani']
-nis=['17305','17306','17307','17308']
-umur=[19,22,20,21]
-pemetaanList(nama, nis, umur)
+    
+nama=['Andre','Beni','Budi','Bayu','Cahyo','Dani','Edward','Faisal',]
+peng=['80','85','75','77','78','78','87','82']
+prak=[87,85,80,80,78,77,88,84]
+daftarnilai(nama, peng, prak)
